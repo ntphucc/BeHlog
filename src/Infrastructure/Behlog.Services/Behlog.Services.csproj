@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DNTCommon.Web.Core" Version="5.3.7" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Behlog.Core.Models\Behlog.Core.Models.csproj" />
+    <ProjectReference Include="..\..\core\Behlog.Core\Behlog.Core.csproj" />
+    <ProjectReference Include="..\..\core\Behlog.Storage.Core\Behlog.Storage.Core.csproj" />
+    <ProjectReference Include="..\..\web\Behlog.Web.Core\Behlog.Web.Core.csproj" />
+    <ProjectReference Include="..\Behlog.Factories\Behlog.Factories.csproj" />
+    <ProjectReference Include="..\Behlog.Services.Dto\Behlog.Services.Dto.csproj" />
+    <ProjectReference Include="..\Behlog.Validation\Behlog.Validation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts\Common\" />
+    <Folder Include="Contracts\Shop\" />
+  </ItemGroup>
+</Project>
